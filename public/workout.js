@@ -81,5 +81,4 @@ async function initWorkout() {
     container.appendChild(p);
   }
   
-  initWorkout();
   
