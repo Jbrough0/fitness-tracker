@@ -1,7 +1,7 @@
 let mongoose = require("mongoose");
 let db = require("../models");
 mongoose.connect(
-  'mongodb+srv://jbrough0:Joker231@cluster0.9flal.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
+  "mongodb+srv://jbrough0:Joker231@cluster1.gnf53.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
   {
       useNewUrlParser: true,
       useFindAndModify: false
