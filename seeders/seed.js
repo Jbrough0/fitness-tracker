@@ -1,11 +1,12 @@
 let mongoose = require("mongoose");
 let db = require("../models");
-
-mongoose.connect("mongodb://localhost/workout", {
-  useNewUrlParser: true,
-  useFindAndModify: false
-});
-
+mongoose.connect(
+  'mongodb+srv://jbrough0:Joker231@cluster0.9flal.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
+  {
+      useNewUrlParser: true,
+      useFindAndModify: false
+  }
+);
 let workoutSeed = [
   {
     day: new Date().setDate(new Date().getDate()-10),
