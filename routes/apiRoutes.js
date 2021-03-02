@@ -15,15 +15,15 @@ var router=require("express").Router();
     });
 
 
-    router.post("/api/workouts", async (req, res) => {
-        try {
-            const response = await db.Workout.create({ type: "workout" })
-            res.json(response);
-        }
-        catch (err) {
-            console.log("error: Trouble occurred while  creating an exercise roution: ", err)
-        }
-    })
+    // router.post("/api/workouts", async (req, res) => {
+    //     try {
+    //         const response = await db.Workout.create({ type: "workout" })
+    //         res.json(response);
+    //     }
+    //     catch (err) {
+    //         console.log("error: Trouble occurred while  creating an exercise roution: ", err)
+    //     }
+    // })
 
 
     router.put("/api/workouts/:id", (req, res) => {
@@ -43,13 +43,13 @@ var router=require("express").Router();
 
     });
 
-router.get("/api/workout/range", (req, res) => {
-        db.Workout.find({})
-            .then(workout => {
-                res.json(workout);
-            })
-            .catch(err => {
-                res.json(err);
-            });
-    });
+// router.get("/api/workout/range", (req, res) => {
+//         db.Workout.find({})
+//             .then(workout => {
+//                 res.json(workout);
+//             })
+//             .catch(err => {
+//                 res.json(err);
+//             });
+//     });
  module.exports=router;
